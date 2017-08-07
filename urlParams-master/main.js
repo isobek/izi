@@ -21,11 +21,12 @@ function setup(){
 
     //Get the URL PARAMETER
     number = getParam("number") || 3;
+    shape = getParam("shape") || ellipse;
 
     //Create a NUMBER of SHAPES with a COLOR
     for (i=0; i<number ;i++) {
         fill(random(255),random(255),random(255));
-        ellipse(random(400),random(400),10,10);
+        shape(random(400),random(400),10,10);
     }
 }
 
